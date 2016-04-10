@@ -1,0 +1,6 @@
+# ignore misc hidden files
+.DS_Store
+
+# ignore data directory
+data/
+
