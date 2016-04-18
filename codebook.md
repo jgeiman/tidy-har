@@ -34,10 +34,10 @@ The data set output from tidy-har contains the following variables:
       7. BodyGyro
       8. BodyAccJerkMag     
       9. BodyGyroJerk
-     10. BodyGyroJerkMag
-     11. BodyGyroMag         
-     12. GravityAcc         
-     13. GravityAccMag
+      10. BodyGyroJerkMag
+      11. BodyGyroMag         
+      12. GravityAcc         
+      13. GravityAccMag
 
  - **direction**: Axial direction for the signal (if applicable). Factor with three (3) levels: X, Y, Z
 
@@ -78,7 +78,7 @@ The output of the **runAnalysis** function is a list containing two data frames:
 To write the tidy data set to a CSV file named 'tidy-har.csv', use the following code:
 
 ```
-write.table(results$tidy, file = "tidy-har.csv", sep = ",", col.names = NA, qmethod = "double")
+write.csv(results$tidy, file = "tidy-har.csv", row.names = FALSE)
 ```
 
 -----
